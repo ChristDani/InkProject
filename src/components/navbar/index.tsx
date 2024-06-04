@@ -16,7 +16,7 @@ const Navbar = () => {
                         <li>Beneficios</li>
                         <li>Planes</li>
                         <li>¿Por qué Inkuña?</li>
-                        <li className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none cursor-pointer'>Reservar Demo</li>
+                        <li className='text-white bg-[#2F5FE3] w-[165px] h-[65px] hover:bg-[#2f4ae3] focus:ring-4 focus:ring-blue-300 font-medium rounded-[30px] px-5 py-2.5 me-2 mb-2 focus:outline-none cursor-pointer flex items-center justify-center shadow-sm'>Reservar Demo</li>
                     </ul>
                 </div>
             </nav>

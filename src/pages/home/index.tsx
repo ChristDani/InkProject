@@ -1,9 +1,9 @@
+import Principal from './principal'
+
 const Home = () => {
     return (
         <>
-            <div className="red">
-                home
-            </div>
+            <Principal />
         </>
     )
 }
