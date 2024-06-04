@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+// import { useEffect, useRef, useState } from 'react';
 import Logo_Image from '../../common/images/Logo_Image'
 import Logo_Text from '../../common/images/Logo_Text';
 
 const Navbar = () => {
     return (
         <>
-            <nav className='w-[1440px] h-[180px] flex justify-between mx-auto mt-14'>
+            <nav className='w-[1440px] h-[180px] flex justify-between mx-auto my-14'>
                 <div className='flex items-center gap-3'>
                     <Logo_Image />
                     <Logo_Text />
