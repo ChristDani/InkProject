@@ -17,6 +17,7 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
 				<div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
 					{/* <!-- ===== Header Start ===== --> */}
 					{/* <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/> */}
+					<Header />
 					{/* <!-- ===== Header End ===== --> */}
 
 					{/* <!-- ===== Main Content Start ===== --> */}
