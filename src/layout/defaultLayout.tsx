@@ -1,9 +1,10 @@
 import React, { useState, ReactNode, memo } from 'react';
 import Header from '../components/header';
-import Sidebar from '../components/sidebar';
+import Footer from '../components/footer'
+// import Sidebar from '../components/sidebar';
 
 const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
-	const [sidebarOpen, setSidebarOpen] = useState(true);
+	// const [sidebarOpen, setSidebarOpen] = useState(true);
 
 	return (
 		<div className="dark:bg-boxdark-2 dark:text-bodydark">
@@ -27,6 +28,7 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
 						</div>
 					</main>
 					{/* <!-- ===== Main Content End ===== --> */}
+					<Footer />
 				</div>
 				{/* <!-- ===== Content Area End ===== --> */}
 			</div>
