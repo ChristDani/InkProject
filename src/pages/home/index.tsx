@@ -1,4 +1,4 @@
-import Usabilidad from "./usabilidad";
+
 
 const Home = () => {
     return (
@@ -6,7 +6,6 @@ const Home = () => {
             <div className="red">
                 home
             </div>
-            <Usabilidad/>
         </>
     )
 }
