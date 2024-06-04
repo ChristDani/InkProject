@@ -4,7 +4,6 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
-import './css/output.css'
 import './css/index.css'
 import Loader from './common/loader';
 // import './css/style.css';
