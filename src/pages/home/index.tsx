@@ -1,9 +1,11 @@
+import Principal from './principal'
+import Usabilidad from './usabilidad';
+
 const Home = () => {
     return (
         <>
-            <div className="red">
-                home
-            </div>
+            <Principal />
+            <Usabilidad />
         </>
     )
 }
