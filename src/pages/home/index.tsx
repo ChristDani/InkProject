@@ -1,3 +1,4 @@
+import BeneficiosH from './beneficios';
 import Principal from './principal'
 import Usabilidad from './usabilidad';
 
@@ -6,6 +7,7 @@ const Home = () => {
         <>
             <Principal />
             <Usabilidad />
+            <BeneficiosH />
         </>
     )
 }
