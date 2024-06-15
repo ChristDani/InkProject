@@ -28,10 +28,10 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
 						</div>
 					</main>
 					{/* <!-- ===== Main Content End ===== --> */}
-					<Footer />
 				</div>
 				{/* <!-- ===== Content Area End ===== --> */}
 			</div>
+					<Footer />
 			{/* <!-- ===== Page Wrapper End ===== --> */}
 		</div>
 	);
