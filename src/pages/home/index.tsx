@@ -1,12 +1,13 @@
 import BeneficiosH from './beneficios';
 import Principal from './principal'
-import Usabilidad from './usabilidad';
+// import Usabilidad from './usabilidad';
+import UsabilidadScroll from './usabilidadScroll';
 
 const Home = () => {
     return (
         <>
             <Principal />
-            <Usabilidad />
+            <UsabilidadScroll />
             <BeneficiosH />
         </>
     )
