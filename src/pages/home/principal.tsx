@@ -4,6 +4,9 @@ import CellPhone from "../../common/images/phone";
 const Principal = () => {
     return (
         <>
+            <div className="w-full h-full MainGradient absolute">
+
+            </div>
             <div className="flex h-[774px]">
                 <div className="w-[50%]">
                     <h1 className="lato-black">Todo lo que necesitas en una plataforma genial</h1>
@@ -20,9 +23,14 @@ const Principal = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="w-[50%]">
-                    <CellPhone />
-                    <HandUp />
+                <div className="w-[50%] relative">
+                    <div className="w-[70%] h-[70%] bg-[#f7d1ca] rounded-[100%] absolute left-[30%]"></div>
+                    <div className="absolute left-[-3%] top-[-15%]">
+                        <CellPhone />
+                    </div>
+                    <div className="absolute left-[23.8%] top-[26.7%]">
+                        <HandUp />
+                    </div>
                 </div>
             </div>
         </>

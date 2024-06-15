@@ -69,3 +69,10 @@
 ::-webkit-scrollbar {
   display: none;
 } 
+
+.MainGradient {
+  background-image: linear-gradient(to right, #dcf2ef, #e6f2e7, #f2f0e4, #faefe8, #fcefef);
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
