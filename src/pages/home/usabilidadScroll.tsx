@@ -5,32 +5,35 @@ import "swiper/css";
 import { useEffect, useRef, useState } from "react";
 
 const UsabilidadScroll = () => {
-  const [isView, setIsView] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [isView, setIsView] = useState("");
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const ref4 = useRef<HTMLDivElement>(null);
+  const ref5 = useRef<HTMLDivElement>(null);
+  const ref6 = useRef<HTMLDivElement>(null);
   const images = [
     "src/images/home/phone.svg",
     "src/images/home/hand.svg",
     "src/images/home/iPhone 13.svg",
-    "src/images/home/iPhone 13.svg",
     "src/images/home/phone.svg",
     "src/images/home/hand.svg",
     "src/images/home/iPhone 13.svg",
+    "src/images/home/phone.svg",
   ];
   useEffect(() => {
     const observer = new IntersectionObserver(([entries]) => {
-      console.log(entries);
-      setIsView(entries.isIntersecting);
-      putImage(2);
+      setIsView(entries.target.id);
     });
     
-    observer.observe(ref.current!);
+    observer.observe(ref1.current!);
+    observer.observe(ref2.current!);
+    observer.observe(ref3.current!);
+    observer.observe(ref4.current!);
+    observer.observe(ref5.current!);
+    observer.observe(ref6.current!);
     return () => observer.disconnect();
   },[])
-  const putImage = (position: number) => {
-    const img = document.getElementById('imgCarrusel');
-    
-    img!.setAttribute('src',`${images[position - 1]}`);
-  }
 
   return (
 
@@ -78,7 +81,7 @@ const UsabilidadScroll = () => {
       </div>*/}
       <div className="flex">
         <div className="w-1/2 bg-red-500" >
-          <div ref={ref} id="Contend-1" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref1} id="1" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -88,7 +91,7 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="Contend-2" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref2} id="2" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -98,7 +101,7 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="Contend-3" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref3} id="3" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -108,7 +111,7 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="Contend-4" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref4} id="4" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -118,7 +121,7 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="Contend-5" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref5} id="5" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -128,7 +131,7 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="Contend-6" className="flex flex-col justify-center items-center h-screen .image">
+          <div ref={ref6} id="6" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -145,7 +148,7 @@ const UsabilidadScroll = () => {
         <div className="w-1/2">
           <div className="sticky top-1/4 overflow-hidden m-auto rounded-[50px] bg-[#EDD9FF] w-[400px] h-[400px]">
             <div className="relative">
-              <img id="imgCarrusel" src={images[1]} alt="" className="opacity-1 isImage1"/>
+              <img id="imgCarrusel" src={images[parseInt(isView)-1]} alt="" className=""/>
               <div className="absolute top-0 bg-gradient-to-t from-[#e6d1f9] w-full h-full">
               </div>
             </div>
