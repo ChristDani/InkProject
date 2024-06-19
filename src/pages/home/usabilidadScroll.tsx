@@ -20,7 +20,6 @@ const UsabilidadScroll = () => {
     const observer = new IntersectionObserver(([entries]) => {
       console.log(entries);
       setIsView(entries.isIntersecting);
-      putImage(2);
     });
     
     observer.observe(ref.current!);
@@ -29,7 +28,7 @@ const UsabilidadScroll = () => {
   const putImage = (position: number) => {
     const img = document.getElementById('imgCarrusel');
     
-    img!.setAttribute('src',`${images[position - 1]}`);
+    img!.setAttribute('src',`${images[position]}`);
   }
 
   return (
@@ -145,7 +144,7 @@ const UsabilidadScroll = () => {
         <div className="w-1/2">
           <div className="sticky top-1/4 overflow-hidden m-auto rounded-[50px] bg-[#EDD9FF] w-[400px] h-[400px]">
             <div className="relative">
-              <img id="imgCarrusel" src={images[1]} alt="" className="opacity-1 isImage1"/>
+              <img id="imgCarrusel" src={isView? images[1] : images[0]} alt="" className="opacity-1 isImage1"/>
               <div className="absolute top-0 bg-gradient-to-t from-[#e6d1f9] w-full h-full">
               </div>
             </div>
