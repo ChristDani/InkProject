@@ -5,7 +5,7 @@ import Logo_Text from '../../common/images/Logo_Text';
 const Navbar = () => {
     return (
         <>
-            <nav className='w-[1440px] h-[180px] flex justify-between mx-auto my-14'>
+            <nav className='w-[1440px] min-h-[324px] flex justify-between mx-auto'>
                 <div className='flex items-center gap-3'>
                     <Logo_Image />
                     <Logo_Text />
