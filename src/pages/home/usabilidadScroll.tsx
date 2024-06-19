@@ -2,10 +2,11 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper styles
 import "swiper/css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const UsabilidadScroll = () => {
-  const [number, setNumber] = useState(0);
+  const [isView, setIsView] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
   const images = [
     "src/images/home/phone.svg",
     "src/images/home/hand.svg",
@@ -15,32 +16,16 @@ const UsabilidadScroll = () => {
     "src/images/home/hand.svg",
     "src/images/home/iPhone 13.svg",
   ];
-
- const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log(entry.target.id); // Muestra el ID del div visible
-        }
-      });
-    },
-    {
-      threshold: 0.5,
-    }
-  );
-
   useEffect(() => {
-    const divs = document.querySelectorAll('.image');
-    divs.forEach((div) => {
-      observer.observe(div);
+    const observer = new IntersectionObserver(([entries]) => {
+      console.log(entries);
+      setIsView(entries.isIntersecting);
+      putImage(2);
     });
-
-    return () => {
-      divs.forEach((div) => {
-        observer.unobserve(div);
-      });
-    };
-  }, []);
+    
+    observer.observe(ref.current!);
+    return () => observer.disconnect();
+  },[])
   const putImage = (position: number) => {
     const img = document.getElementById('imgCarrusel');
     
@@ -92,8 +77,8 @@ const UsabilidadScroll = () => {
         </Swiper>
       </div>*/}
       <div className="flex">
-        <div className="w-1/2 bg-red-500">
-          <div id="image1" className="flex flex-col justify-center items-center h-screen .image">
+        <div className="w-1/2 bg-red-500" >
+          <div ref={ref} id="Contend-1" className="flex flex-col justify-center items-center h-screen .image">
               <p className="lato-light-italic">¿Cómo funciona?</p>
               <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
               <p className="w-[400px]">
@@ -103,26 +88,55 @@ const UsabilidadScroll = () => {
                 pariatur quas, error itaque consequatur. Sapiente, unde?
               </p>
           </div>
-          <div id="image2" onGotPointerCapture={() => console.log('funciona')
-          } /*onFocus={() => putImage(2)}*/  className="p-14 h-screen .image ">
-            <p className=" lato-light-italic">¿Cómo funciona?</p>
-            <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
-            <p className="w-[400px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique laudantium porro sequi nulla fugiat omnis, et
-              inventore saepe beatae iste, necessitatibus sunt aperiam
-              pariatur quas, error itaque consequatur. Sapiente, unde?
-            </p>
+          <div id="Contend-2" className="flex flex-col justify-center items-center h-screen .image">
+              <p className="lato-light-italic">¿Cómo funciona?</p>
+              <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
+              <p className="w-[400px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique laudantium porro sequi nulla fugiat omnis, et
+                inventore saepe beatae iste, necessitatibus sunt aperiam
+                pariatur quas, error itaque consequatur. Sapiente, unde?
+              </p>
           </div>
-          <div id="image3" onFocus={() => putImage(3)} className="p-14 h-screen ">
-            <p className=" lato-light-italic">¿Cómo funciona?</p>
-            <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
-            <p className="w-[400px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique laudantium porro sequi nulla fugiat omnis, et
-              inventore saepe beatae iste, necessitatibus sunt aperiam
-              pariatur quas, error itaque consequatur. Sapiente, unde?
-            </p>
+          <div id="Contend-3" className="flex flex-col justify-center items-center h-screen .image">
+              <p className="lato-light-italic">¿Cómo funciona?</p>
+              <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
+              <p className="w-[400px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique laudantium porro sequi nulla fugiat omnis, et
+                inventore saepe beatae iste, necessitatibus sunt aperiam
+                pariatur quas, error itaque consequatur. Sapiente, unde?
+              </p>
+          </div>
+          <div id="Contend-4" className="flex flex-col justify-center items-center h-screen .image">
+              <p className="lato-light-italic">¿Cómo funciona?</p>
+              <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
+              <p className="w-[400px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique laudantium porro sequi nulla fugiat omnis, et
+                inventore saepe beatae iste, necessitatibus sunt aperiam
+                pariatur quas, error itaque consequatur. Sapiente, unde?
+              </p>
+          </div>
+          <div id="Contend-5" className="flex flex-col justify-center items-center h-screen .image">
+              <p className="lato-light-italic">¿Cómo funciona?</p>
+              <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
+              <p className="w-[400px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique laudantium porro sequi nulla fugiat omnis, et
+                inventore saepe beatae iste, necessitatibus sunt aperiam
+                pariatur quas, error itaque consequatur. Sapiente, unde?
+              </p>
+          </div>
+          <div id="Contend-6" className="flex flex-col justify-center items-center h-screen .image">
+              <p className="lato-light-italic">¿Cómo funciona?</p>
+              <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
+              <p className="w-[400px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique laudantium porro sequi nulla fugiat omnis, et
+                inventore saepe beatae iste, necessitatibus sunt aperiam
+                pariatur quas, error itaque consequatur. Sapiente, unde?
+              </p>
           </div>
         </div>
         <div>
@@ -131,7 +145,7 @@ const UsabilidadScroll = () => {
         <div className="w-1/2">
           <div className="sticky top-1/4 overflow-hidden m-auto rounded-[50px] bg-[#EDD9FF] w-[400px] h-[400px]">
             <div className="relative">
-              <img id='imgCarrusel' src={images[0]} alt="" className="" />
+              <img id="imgCarrusel" src={images[1]} alt="" className="opacity-1 isImage1"/>
               <div className="absolute top-0 bg-gradient-to-t from-[#e6d1f9] w-full h-full">
               </div>
             </div>
