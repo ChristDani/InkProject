@@ -24,11 +24,11 @@ const Principal = () => {
                     </div>
                 </div>
                 <div className="w-[50%] relative">
-                    <div className="w-[70%] h-[70%] bg-[#f7d1ca] rounded-[100%] absolute left-[30%]"></div>
-                    <div className="absolute left-[-3%] top-[-15%]">
+                    <div className="w-[70%] h-[70%] bg-[#f7d1ca] rounded-[100%] absolute left-[30%] top-[-4%]"></div>
+                    <div className="absolute left-[-3%] top-[-19%]">
                         <CellPhone />
                     </div>
-                    <div className="absolute left-[23.8%] top-[26.7%]">
+                    <div className="absolute left-[23.8%] top-[22.7%]">
                         <HandUp />
                     </div>
                 </div>
