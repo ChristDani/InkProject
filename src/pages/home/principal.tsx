@@ -1,5 +1,6 @@
 import HandUp from "../../common/images/handUp";
 import CellPhone from "../../common/images/phone";
+import Play from '../../common/icons/Play';
 
 const Principal = () => {
     return (
@@ -12,8 +13,16 @@ const Principal = () => {
                     <h1 className="lato-black">Todo lo que necesitas en una plataforma genial</h1>
                     <span className="text-justify">Sigue los planes de tu equipo, registra su progreso y comenta todo en un solo lugar. Déjanos manejar tu trabajo sin problemas y no te pierdas de lo que hace tu equipo.</span>
                     <ul className="flex gap-4">
-                        <li>Ver video</li>
-                        <li>Reservar demo</li>
+                        <li>
+                            <div className="flex items-center justify-center gap-6 min-h-[65px] min-w-[185px] bg-white rounded-[30px] bold">
+                                Ver video <Play />
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                Reservar demo
+                            </div>
+                        </li>
                     </ul>
                     <div>
                         <ul className="flex gap-4">
