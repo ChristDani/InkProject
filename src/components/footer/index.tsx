@@ -1,3 +1,5 @@
+import AppIco from '../../common/icons/App_Ico';
+
 const Footer = () => {
   return (
     <>
@@ -8,7 +10,7 @@ const Footer = () => {
           <div className="w-[1440px] mx-auto min-h-[603px] mt-[70px] mb-[17px]">
             <div className="flex flex-row min-h-[487px] gap-1">
               <div className="flex flex-col min-w-[482.5px] justify-between py-5">
-                <div></div>
+                <div><AppIco /></div>
                 <div className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, labore vitae. Laudantium rem adipisci quod veritatis labore accusamus et cupiditate explicabo impedit, repellat, dolorum animi nihil eum ab officia minima!</div>
                 <input className="w-[474px] h-[65px] rounded-[30px]" type="text" placeholder="Ingrese su correo electronico" />
               </div>
