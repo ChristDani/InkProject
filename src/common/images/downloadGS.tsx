@@ -1,7 +1,7 @@
 const downloadGS = () => {
     return (
         <>
-            <svg width="1013" height="300" viewBox="0 0 1013 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+            <svg width="113" height="33" viewBox="0 0 1013 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="1013" height="300" fill="url(#pattern0_6_249)" />
                 <defs>
                     <pattern id="pattern0_6_249" patternContentUnits="objectBoundingBox" width="1" height="1">
