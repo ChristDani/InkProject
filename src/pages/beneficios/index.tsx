@@ -1,13 +1,13 @@
 const Beneficios = () => {
     return (
         <>
-            <div className="text-[#002140] text-center w-1/2 mx-auto flex flex-col gap-4 mt-12">
+            <div className="text-[#002140] text-center w-full flex flex-col gap-4 mt-12">
                 <h1 className="lato-black">Beneficios</h1>
                 <span className="text-sm font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, beatae voluptatibus! Cupiditate veniam, amet libero commodi nam a saepe rerum enim deserunt.</span>
             </div>
             <div className=" flex flex-col gap-10 mt-12">
                 <div className="flex w-full justify-center">
-                    <div className="w-1/3">
+                    <div className="">
                         <span className="font-bold text-3xl italic text-[#002140]">Docentes</span>
                         <p className="mt-3 text-[#002140] text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates beatae officiis porro ab mollitia quod pariatur autem, dignissimos non expedita iure veniam dicta unde quas, nihil culpa minima reiciendis.</p>
                         <div className="mt-8">
