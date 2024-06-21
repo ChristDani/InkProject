@@ -183,14 +183,14 @@ const UsabilidadScroll = () => {
             </div>
               <div className="absolute  -right-2 transform  flex flex-col space-y-2 my-auto top-1/4 ">
                 {images.map((_, index) => (
-                  <button
+                  <div
                     key={index}
-                    className={`w-[40px] h-[40px] rounded-full ${
+                    className={`w-[40px] h-[40px] text-center p-2 pointer-events-none rounded-full ${
                       index + 1 === parseInt(isView) ? "bg-[#FD1775]" : ""
                     }`}
                   >
                     {index + 1}
-                  </button>
+                  </div>
                 ))}
               </div>
           </div>
