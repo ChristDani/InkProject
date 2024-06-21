@@ -3,6 +3,8 @@ import GmailIco from '../../common/icons/gmailIco';
 import PhoneIco from '../../common/icons/phoneIco';
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import DownloadAS from '../../common/images/downloadAS';
 import DownloadGS from '../../common/images/downloadGS';
 
@@ -71,9 +73,15 @@ const Footer = () => {
                   </span>
                   <div className="flex flex-row">
                     <div className="w-10 h-10">
-                      <FaFacebookF 
+                      <FaFacebookF
                         style={{ color: '#2F5FE3!important' }}
                       />
+                    </div>
+                    <div className="w-10 h-10">
+                      <FaTwitter />
+                    </div>
+                    <div className="w-10 h-10">
+                      <FaLinkedinIn />
                     </div>
                     <div className="w-10 h-10">
                       <FaInstagram />
