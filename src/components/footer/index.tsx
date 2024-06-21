@@ -32,7 +32,7 @@ const Footer = () => {
                     Unete y recibe nuestro boletin informativo
                   </div>
                   <input
-                    className="w-[474px] h-[65px] rounded-[30px]"
+                    className="w-[474px] h-[65px] rounded-[30px]  placeholder:text-start pl-5 placeholder:text-gray-400"
                     type="text"
                     placeholder="Ingrese su correo electronico"
                   />
@@ -40,16 +40,16 @@ const Footer = () => {
               </div>
               <div className="flex flex-col min-w-[482.5px] justify-between py-5">
                 <div>
-                  <div className="flex flex-col">
-                    <div className="text-white">Legales</div>
+                  <div className="flex flex-col gap-7">
+                    <div className="text-white lato-black-thin" >Legales</div>
                     <div className="text-white">Terminos y Condiciones</div>
                     <div className="text-white">Politicas de Privacidad</div>
                   </div>
                 </div>
-                <div className="text-white">
-                  <div className="flex flex-col">
-                    <div className="text-white">Descarga la app</div>
-                    <div className="flex">
+                <div>
+                  <div className="flex flex-col gap-4">
+                    <div className="text-white lato-black-thin">Descarga la app</div>
+                    <div className="flex gap-2">
                       <DownloadGS />
                       <DownloadAS />
                     </div>

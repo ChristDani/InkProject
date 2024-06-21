@@ -1,7 +1,7 @@
 const downloadAS = () => {
     return (
         <>
-            <svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+            <svg width="99" height="33" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <rect width="900" height="300" fill="url(#pattern0_6_250)" />
                 <defs>
                     <pattern id="pattern0_6_250" patternContentUnits="objectBoundingBox" width="1" height="1">
