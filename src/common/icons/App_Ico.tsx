@@ -1,7 +1,7 @@
 const AppIco = () => {
     return (
         <>
-            <svg width="154" height="150" viewBox="0 0 154 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="63" height="61" viewBox="0 0 154 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_3_222)">
                     <path d="M153.551 0V79.3106C153.551 118.056 122.072 149.512 83.2976 149.512V70.2015C83.2976 31.4557 114.777 0 153.551 0Z" fill="white" />
                     <path d="M-0.00012207 79.3107H70.2532V149.512C31.4788 149.51 -0.00012207 118.054 -0.00012207 79.3107Z" fill="white" />

@@ -14,29 +14,32 @@
 
 .lato-thin {
   font-weight: 100;
-  font-style: normal;
 }
-
 .lato-light {
   font-weight: 300;
-  font-style: normal;
 }
 
 .lato-regular {
   font-weight: 400;
-  font-style: normal;
+}
+
+.lato-medium {
+  font-weight: 600;
+  line-height: 19.2px;
 }
 
 .lato-bold {
   font-weight: 700;
-  font-style: normal;
 }
-
 .lato-black {
   font-weight: 900;
-  font-style: normal;
   line-height: 103.2px;
   font-size: 86px;
+}
+.lato-black-thin {
+  font-weight: 900;
+  line-height: 28.8px;
+  font-size: 24px;
 }
 
 .lato-thin-italic {
