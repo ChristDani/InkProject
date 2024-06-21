@@ -60,8 +60,8 @@ const Footer = () => {
                 </button>
               </div>
               <div className="flex flex-col min-w-[482.5px] justify-between py-5">
-                <div className="flex flex-col">
-                  <span className="text-white">Contacto</span>
+                <div className="flex flex-col gap-4">
+                  <span className="text-white lato-black-thin">Contacto</span>
                   <span className="text-white">Nuestro canal de soporte</span>
                   <span className="flex gap-4 text-white">
                     <PhoneIco /> (+51) 958 346 375
@@ -73,20 +73,20 @@ const Footer = () => {
                     <GmailIco /> info@inikuna.pe
                   </span>
                 </div>
-                <div className="flex flex-col">
-                  <span className="text-white">Siguenos en</span>
-                  <div className="flex flex-row">
-                    <div className="w-10 h-10">
-                      <FaFacebookF color="white"/>
+                <div className="flex flex-col gap-6 justify-center min-h-[50%]">
+                  <span className="text-white lato-black-thin">Siguenos en</span>
+                  <div className="flex flex-row gap-5">
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637]  cursor-pointer">
+                      <FaFacebookF className="w-8 h-8"  color="white"/>
                     </div>
-                    <div className="w-10 h-10">
-                      <FaTwitter color="white"/>
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                      <FaTwitter className="w-8 h-8"  color="white"/>
                     </div>
-                    <div className="w-10 h-10">
-                      <FaLinkedinIn color="white"/>
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                      <FaLinkedinIn  className="w-8 h-8" color="white"/>
                     </div>
-                    <div className="w-10 h-10">
-                      <FaInstagram color="white"/>
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                      <FaInstagram className="w-8 h-8"  color="white"/>
                     </div>
                   </div>
                 </div>
