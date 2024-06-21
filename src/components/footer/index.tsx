@@ -77,16 +77,16 @@ const Footer = () => {
                   <span className="text-white">Siguenos en</span>
                   <div className="flex flex-row">
                     <div className="w-10 h-10">
-                      <FaFacebookF style={{ color: "#2F5FE3!important" }} />
+                      <FaFacebookF color="white"/>
                     </div>
                     <div className="w-10 h-10">
-                      <FaTwitter />
+                      <FaTwitter color="white"/>
                     </div>
                     <div className="w-10 h-10">
-                      <FaLinkedinIn />
+                      <FaLinkedinIn color="white"/>
                     </div>
                     <div className="w-10 h-10">
-                      <FaInstagram />
+                      <FaInstagram color="white"/>
                     </div>
                   </div>
                 </div>
