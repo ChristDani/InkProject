@@ -11,13 +11,13 @@ const UsabilidadScroll = () => {
   const ref7 = useRef<HTMLDivElement>(null);
 
   const images = [
-    "../images/home/phone.svg",
-    "../images/home/hand.svg",
-    "../images/home/iPhone 13.svg",
-    "../images/home/phone.svg",
-    "../images/home/hand.svg",
-    "../images/home/iPhone 13.svg",
-    "../images/home/phone.svg",
+    "../src/images/home/phone.svg",
+    "../src/images/home/hand.svg",
+    "../src/images/home/iPhone 13.svg",
+    "../src/images/home/phone.svg",
+    "../src/images/home/hand.svg",
+    "../src/images/home/iPhone 13.svg",
+    "../src/images/home/phone.svg",
   ];
 
   const [opacity, setOpacity] = useState(0);
