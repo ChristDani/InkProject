@@ -13,6 +13,10 @@ const AppRoutes: RouteObject[] = [
 		element: <Home />,
 	},
 	{
+		path: '/InkProject',
+		element: <Home />,
+	},
+	{
 		path: '/Inicio',
 		element: <Home />,
 	},
