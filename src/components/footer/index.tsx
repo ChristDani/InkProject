@@ -32,7 +32,7 @@ const Footer = () => {
                     Unete y recibe nuestro boletin informativo
                   </div>
                   <input
-                    className="w-[474px] h-[65px] rounded-[30px]  placeholder:text-start pl-5 placeholder:text-gray-400"
+                    className="w-[474px] h-[65px] rounded-[30px]  placeholder:text-start pl-5 placeholder:text-gray-400 focus:outline-0"
                     type="text"
                     placeholder="Ingrese su correo electronico"
                   />
@@ -76,16 +76,16 @@ const Footer = () => {
                 <div className="flex flex-col gap-6 justify-center min-h-[50%]">
                   <span className="text-white lato-black-thin">Siguenos en</span>
                   <div className="flex flex-row gap-5">
-                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637]  cursor-pointer">
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637]  cursor-pointer hover:bg-orange-500">
                       <FaFacebookF className="w-8 h-8"  color="white"/>
                     </div>
-                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer hover:bg-orange-500">
                       <FaTwitter className="w-8 h-8"  color="white"/>
                     </div>
-                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer hover:bg-orange-500">
                       <FaLinkedinIn  className="w-8 h-8" color="white"/>
                     </div>
-                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer">
+                    <div className="flex justify-center items-center w-14 h-14 bg-[#212637] cursor-pointer hover:bg-orange-500">
                       <FaInstagram className="w-8 h-8"  color="white"/>
                     </div>
                   </div>

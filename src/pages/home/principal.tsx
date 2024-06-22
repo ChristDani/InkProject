@@ -9,7 +9,7 @@ import { RiShoppingBag2Fill } from "react-icons/ri";
 const Principal = () => {
     return (
         <>
-            <div className="w-full h-full MainGradient absolute">
+            <div className="w-full min-h-[1098px] h-full MainGradient absolute">
 
             </div>
             <div className="flex h-[774px]">
@@ -34,7 +34,7 @@ const Principal = () => {
                         </li>
                     </ul>
                     <div className="flex flex-col gap-5">
-                        <div>Descargalo en</div>
+                        <div className="lato-medium">Descargalo en</div>
                         <ul className="flex gap-4">
                             <li>
                                 <div className="cursor-pointer flex items-center justify-center gap-1 min-h-[30px] min-w-[120px] bg-black rounded-[30px]">

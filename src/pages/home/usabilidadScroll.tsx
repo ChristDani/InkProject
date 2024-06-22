@@ -179,7 +179,7 @@ const UsabilidadScroll = () => {
                 className="bg-cover bg-center bg-no-repeat h-[640px] w-[640px] transition-opacity duration-500 ease-in-out"
                 style={{ opacity }}
               />
-              <div className="absolute bottom-0 bg-gradient-to-t from-[#e6d1f9] w-full h-full"></div>
+              <div className="absolute bottom-0 bg-gradient-to-t from-[#e6d1f9] w-full h-[320px]"></div>
             </div>
               <div className="absolute  -right-2 transform  flex flex-col space-y-2 my-auto top-1/4 ">
                 {images.map((_, index) => (

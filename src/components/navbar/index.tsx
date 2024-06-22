@@ -12,11 +12,31 @@ const Navbar = () => {
                 </div>
                 <div className='flex items-center'>
                     <ul className='list-none flex justify-around text-black gap-8 items-center'>
-                        <li>Inicio</li>
-                        <li><a href="#image2">Beneficios</a></li>
-                        <li>Planes</li>
-                        <li>¿Por qué Inkuña?</li>
-                        <li className='text-white bg-[#2F5FE3] w-[165px] h-[65px] hover:bg-[#2f4ae3] focus:ring-4 focus:ring-blue-300 font-medium rounded-[30px] px-5 py-2.5 me-2 mb-2 focus:outline-none cursor-pointer flex items-center justify-center shadow-sm'>Reservar Demo</li>
+                        <li className='cursor-pointer hover:border-b-2 hover:border-cyan-500'>
+                            <a href="/">
+                                Inicio
+                            </a>
+                        </li>
+                        <li className='cursor-pointer hover:border-b-2 hover:border-cyan-500'>
+                            <a href="/beneficios">
+                                Beneficios
+                            </a>
+                        </li>
+                        <li className='cursor-pointer hover:border-b-2 hover:border-cyan-500'>
+                            <a href="/planes">
+                                Planes
+                            </a>
+                        </li>
+                        <li className='cursor-pointer hover:border-b-2 hover:border-cyan-500'>
+                            <a href="/nosotros">
+                                ¿Por qué Inkuña?
+                            </a>
+                        </li>
+                        <li className='text-white bg-[#2F5FE3] w-[165px] h-[65px] hover:bg-[#2f4ae3] focus:ring-4 focus:ring-blue-300 font-medium rounded-[30px] px-5 py-2.5 me-2 mb-2 focus:outline-none cursor-pointer flex items-center justify-center shadow-sm'>
+                            <a href="/demo">
+                                Reservar Demo
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
