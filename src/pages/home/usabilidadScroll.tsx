@@ -11,13 +11,13 @@ const UsabilidadScroll = () => {
   const ref7 = useRef<HTMLDivElement>(null);
 
   const images = [
-    "src/images/home/phone.svg",
-    "src/images/home/hand.svg",
-    "src/images/home/iPhone 13.svg",
-    "src/images/home/phone.svg",
-    "src/images/home/hand.svg",
-    "src/images/home/iPhone 13.svg",
-    "src/images/home/phone.svg",
+    "../images/home/phone.svg",
+    "../images/home/hand.svg",
+    "../images/home/iPhone 13.svg",
+    "../images/home/phone.svg",
+    "../images/home/hand.svg",
+    "../images/home/iPhone 13.svg",
+    "../images/home/phone.svg",
   ];
 
   const [opacity, setOpacity] = useState(0);
@@ -30,18 +30,12 @@ const UsabilidadScroll = () => {
   }, [isView]);
 
   useEffect(() => {
-    // const img = document.getElementById('imgCarrusel') as HTMLImageElement;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsView(entry.target.id);
-            // img.classList.add('opacity-100');
-            console.log(entry.target.id);
           }
-          // else {
-          //   img.classList.remove('opacity-100');
-          // }
         });
       },
       { threshold: 0.5 } // Ajusta el umbral de intersección según tus necesidades
