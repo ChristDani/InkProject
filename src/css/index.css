@@ -84,3 +84,10 @@ h1, h2, h3, h4, h5, h6, div, span {
   left: 0;
   z-index: -10;
 }
+
+.bg_footer {
+  background-image: url('../images/public/bg_footer.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
