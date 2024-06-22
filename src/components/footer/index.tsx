@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <div
         className="min-h-[690px] w-full relative"
-        style={{ backgroundImage: 'URL("src/images/public/bg_footer.svg")' }}
+        style={{ backgroundImage: 'URL("../../images/public/bg_footer.svg")' }}
       >
         <div>
           <div className="w-[1440px] mx-auto min-h-[603px] mt-[70px] mb-[17px]">
