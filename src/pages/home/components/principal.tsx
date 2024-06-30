@@ -1,6 +1,6 @@
-import HandUp from "../../common/images/handUp";
-import CellPhone from "../../common/images/phone";
-import Play from '../../common/icons/Play';
+import HandUp from "../../../common/images/handUp";
+import CellPhone from "../../../common/images/phone";
+import Play from '../../../common/icons/Play';
 
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa";

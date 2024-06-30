@@ -54,7 +54,7 @@ const UsabilidadScroll = () => {
 
   return (
     <div>
-      <div className="text-center m-10">
+      <div className="text-center my-14">
         <h2 className="lato-black">Fácil y flexible de usar</h2>
         <p className="text-[16px] leading-[19px] mx-96">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
@@ -67,7 +67,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref1}
             id="1"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -81,7 +81,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref2}
             id="2"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -95,7 +95,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref3}
             id="3"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -109,7 +109,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref4}
             id="4"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -123,7 +123,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref5}
             id="5"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -137,7 +137,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref6}
             id="6"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -151,7 +151,7 @@ const UsabilidadScroll = () => {
           <div
             ref={ref7}
             id="7"
-            className="flex flex-col justify-center items-center h-screen .image"
+            className="flex flex-col justify-start items-start mt-[18vh] mb-[32vh] min-h-[50vh] pl-[20%] .image"
           >
             <p className="lato-light-italic">¿Cómo funciona?</p>
             <h2 className="lato-black-italic">Crea tu cuenta en línea</h2>
@@ -164,22 +164,22 @@ const UsabilidadScroll = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <div className="sticky  top-[20%]  m-auto  ">
-            <div className="relative h-[640px]  overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
+          <div className="sticky  top-[15vh]  m-auto  ">
+            <div className="relative h-[70vh] overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
               <img
                 id="imgCarrusel"
                 src={images[parseInt(isView) - 1]}
                 alt=""
-                className="bg-cover bg-center bg-no-repeat h-[640px] w-[640px] transition-opacity duration-500 ease-in-out"
+                className="bg-cover bg-center bg-no-repeat h-[70vh] w-[640px] transition-opacity duration-500 ease-in-out"
                 style={{ opacity }}
               />
-              <div className="absolute bottom-0 bg-gradient-to-t from-[#e6d1f9] w-full h-[320px]"></div>
+              <div className="absolute bottom-0 bg-gradient-to-t from-[#e6d1f9] w-full h-[35vh]"></div>
             </div>
             <div className="absolute  -right-2 transform  flex flex-col space-y-2 my-auto top-1/4 ">
               {images.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-[40px] h-[40px] text-center p-2 pointer-events-none rounded-full ${index + 1 === parseInt(isView) ? "bg-[#FD1775]" : ""
+                  className={`w-[40px] h-[40px] text-center p-2 pointer-events-none rounded-full ${index + 1 === parseInt(isView) ? "bg-[#FD1775] text-white" : ""
                     }`}
                 >
                   {index + 1}

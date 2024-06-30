@@ -1,9 +1,9 @@
-import LovelyHands from "../../common/icons/LovelyHands";
-import Security from "../../common/icons/Security";
-import ShootingStars from "../../common/icons/ShootingStars";
-import Card from "../../components/card";
+import LovelyHands from "../../../common/icons/LovelyHands";
+import Security from "../../../common/icons/Security";
+import ShootingStars from "../../../common/icons/ShootingStars";
+import Card from "../../../components/card";
 
-const BenefitsSection = () => {
+const MoreBenefits = () => {
   return (
     <>
       <div className="absolute bg-purple-100 rounded-t-[100px] min-h-[943px] mt-60 pb-10 flex flex-col items-center w-full left-0 -z-10"></div>
@@ -36,4 +36,4 @@ const BenefitsSection = () => {
   );
 };
 
-export default BenefitsSection;
+export default MoreBenefits;

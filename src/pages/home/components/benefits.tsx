@@ -1,4 +1,4 @@
-const BeneficiosH = () => {
+const Benefit = () => {
     return (
         <>
             <div className="text-[#002140] text-center w-1/2 mx-auto flex flex-col gap-4 mt-12">
@@ -98,4 +98,4 @@ const BeneficiosH = () => {
     )
 }
 
-export default BeneficiosH;
+export default Benefit;
