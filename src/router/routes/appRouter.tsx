@@ -2,9 +2,9 @@ import { lazy } from 'react';
 import { RouteObject } from 'react-router-dom';
 
 const Home = lazy(() => import('../../pages/home'));
-const Beneficios = lazy(() => import('../../pages/beneficios'));
-const Planes = lazy(() => import('../../pages/planes'));
-const Nosotros = lazy(() => import('../../pages/nosotros'));
+const Benefits = lazy(() => import('../../pages/benefits'));
+const Plans = lazy(() => import('../../pages/plans'));
+const Us = lazy(() => import('../../pages/us'));
 const Demo = lazy(() => import('../../pages/demo'));
 
 const AppRoutes: RouteObject[] = [
@@ -22,15 +22,15 @@ const AppRoutes: RouteObject[] = [
 	},
 	{
 		path: '/beneficios',
-		element: <Beneficios />,
+		element: <Benefits />,
 	},
 	{
 		path: '/planes',
-		element: <Planes />,
+		element: <Plans />,
 	},
 	{
 		path: '/nosotros',
-		element: <Nosotros />,
+		element: <Us />,
 	},
 	{
 		path: '/demo',

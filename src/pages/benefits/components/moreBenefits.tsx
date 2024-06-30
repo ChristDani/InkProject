@@ -1,12 +1,12 @@
-import LovelyHands from "../../../common/icons/LovelyHands";
-import Security from "../../../common/icons/Security";
-import ShootingStars from "../../../common/icons/ShootingStars";
-import Card from "../../../components/card";
+import LovelyHands from "@/common/icons/LovelyHands";
+import Security from "@/common/icons/Security";
+import ShootingStars from "@/common/icons/ShootingStars";
+import Card from "@/components/card";
 
 const MoreBenefits = () => {
   return (
     <>
-      <div className="absolute bg-purple-100 rounded-t-[100px] min-h-[943px] mt-60 pb-10 flex flex-col items-center w-full left-0 -z-10"></div>
+      <div className="absolute bg-[#B0E0DF] rounded-t-[100px] min-h-[1098px] mt-60 pb-28 flex flex-col items-center w-full left-0 -z-10"></div>
       <div className="mt-72 right-2">
         <div className="text-center flex flex-col items-center">
           <h2 className=" lato-black">Más allá de los beneficios</h2>
@@ -17,17 +17,17 @@ const MoreBenefits = () => {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="flex flex-wrap justify-around mt-44 mx-10 w-[1410px] gap-[30px] mb-10">
+        <div className="flex flex-wrap justify-around mt-44 mx-10 w-[1410px] gap-[30px] mb-28">
           <Card
-            icon={<LovelyHands primaryColor="8700FF" secondaryColor="E7CCFF"/>}
+            icon={<LovelyHands primaryColor="07B8C7" secondaryColor="B0E0DF"/>}
             text=" Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus. Lorem ipsum amet, consectetur adipiscing"
           />
           <Card
-            icon={<Security primaryColor="8700FF" secondaryColor="E7CCFF"/>}
+            icon={<Security primaryColor="07B8C7" secondaryColor="B0E0DF"/>}
             text=" Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus. Lorem ipsum amet, consectetur adipiscing"
           />
           <Card
-            icon={<ShootingStars primaryColor="8700FF" secondaryColor="E7CCFF"/>}
+            icon={<ShootingStars primaryColor="07B8C7" secondaryColor="B0E0DF"/>}
             text=" Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus. Lorem ipsum amet, consectetur adipiscing"
           />
         </div>
