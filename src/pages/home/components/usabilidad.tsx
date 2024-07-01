@@ -38,7 +38,7 @@ const UsabilidadScroll = () => {
           }
         });
       },
-      { threshold: 0.5 } // Ajusta el umbral de intersección según tus necesidades
+      { threshold: 1 } // Ajusta el umbral de intersección según tus necesidades
     );
 
     observer.observe(ref1.current!);
@@ -53,7 +53,7 @@ const UsabilidadScroll = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mb-[15vh]">
       <div className="text-center my-14">
         <h2 className="lato-black">Fácil y flexible de usar</h2>
         <p className="text-[16px] leading-[19px] mx-96">
@@ -165,7 +165,7 @@ const UsabilidadScroll = () => {
         </div>
         <div className="w-1/2">
           <div className="sticky  top-[15vh]  m-auto  ">
-            <div className="relative h-[70vh] overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
+            <div className="relative h-[70vh] my-[15vh] overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
               <img
                 id="imgCarrusel"
                 src={images[parseInt(isView) - 1]}
