@@ -1,11 +1,11 @@
+import MoreBenefits from "./components/moreBenefits";
+
 const Planes = () => {
     return (
         <>
-            <div className="red">
-                planes
-            </div>
+            <MoreBenefits />
         </>
-    )
-}
+    );
+};
 
 export default Planes;

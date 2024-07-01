@@ -165,7 +165,7 @@ const UsabilidadScroll = () => {
         </div>
         <div className="w-1/2">
           <div className="sticky  top-[15vh]  m-auto  ">
-            <div className="relative h-[70vh] my-[15vh] overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
+            <div className="relative h-[70vh] overflow-hidden w-[640px] bg-gradient-to-b from-fuchsia-200 to-fuchsia-100 border rounded-[40px] ">
               <img
                 id="imgCarrusel"
                 src={images[parseInt(isView) - 1]}
